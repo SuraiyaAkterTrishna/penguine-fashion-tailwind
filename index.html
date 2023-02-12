@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penguine Fashion</title>
-    <!-- tailwind link -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penguine Fashion</title>
+  <!-- tailwind link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primary: '#FABE4C',
+            penguine_bg: '#FFFBF0',
+            penguine_btn: '',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
+
 <body>
-    <!-- 
+  <!-- 
       ------------------------------------------------------------------------------------------------------
       header start 
       ------------------------------------------------------------------------------------------------------
     -->
-    <header class="bg-[#FFFBF0]">
-      <nav class="lg:flex justify-between items-center py-8 container mx-auto">
-        <div class="header-logo">
-          <img class="h-10" src="images/logo.png" alt="">
+  <header class="bg-[#FFFBF0]">
+    <nav class="lg:flex justify-between items-center py-8 container mx-auto">
+      <div class="header-logo">
+        <img class="h-10" src="images/logo.png" alt="">
+      </div>
+      <div class="header-menu">
+        <ul class="lg:flex space-x-14 font-bold text-xl hidden">
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Home</a></li>
+          <li><a href="#product" target="_blank" rel="noopener noreferrer">Product</a></li>
+          <li><a href="#about" target="_blank" rel="noopener noreferrer">About</a></li>
+          <li><a href="#contact" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="banner bg-penguine_bg pb-24">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="banner-info space-y-4">
+          <h1 class="text-7xl uppercase font-bold"><span class="block text-primary">Be the penguine </span>of winter</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="bg-[#a4bc46] px-10 py-4 rounded-md font-bold text-white text-xl">Buy Now</button>
         </div>
-        <div class="header-menu">
-          <ul class="lg:flex space-x-14 font-bold text-xl hidden">
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Home</a></li>
-            <li><a href="#product" target="_blank" rel="noopener noreferrer">Product</a></li>
-            <li><a href="#about" target="_blank" rel="noopener noreferrer">About</a></li>
-            <li><a href="#contact" target="_blank" rel="noopener noreferrer">Contact</a></li>
-          </ul>
+        <div class="banner-thumbnail">
+          <img width="100%" src="images/model.png" alt="">
         </div>
-      </nav>
-    </header>
-    <main>
+      </div>
+    </section>
+  </main>
+  <footer>
 
-    </main>
-    <footer>
-
-    </footer>
+  </footer>
 </body>
+
 </html>
